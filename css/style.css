@@ -289,18 +289,49 @@ svg {
 	img {
 		max-height: 28px !important;
 	}
-
 	.menu-item {
-
+		
+		&:has(>ul) {
+			ul {
+				display: none;
+				li {
+					padding: 10px;
+				}
+			}
+			&:focus-within {
+				ul:not(li ul) {
+					display: block;
+				}
+			}
+		}
+		&:has(ul li ul) {
+			&:focus-within {
+				>ul {
+					display: block;
+					li {
+						ul {
+							display: none !important;
+							padding-left: 24px;
+						}
+						&:focus-within {
+							ul {
+								display: block !important;
+							}
+						}
+					}
+				}
+			}
+		}
 		a {
 			margin-bottom: 10px;
 			border-left: 2px solid transparent;
 			transition: 300ms ease-in;
-			color: var(--dark-color) !important;
+			color: var(--white-color) !important;
 
 			&:hover {
-				border-left: 2px solid var(--secondary-color) !important;
-				color: var(--secondary-color) !important;
+				padding: 8px 20px;
+				border-left: 2px solid var(--white-color) !important;
+				color: var(--white-color) !important;
 			}
 		}
 
@@ -1076,6 +1107,7 @@ section.error-404 {
 		}
 	}
 }
+
 #ewarrenty {
 	padding: 100px 0;
 	h1 {
