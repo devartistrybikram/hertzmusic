@@ -99,6 +99,23 @@
             font-size: 32px;
         }
     }
+    #productArea {
+        .boxes {
+            max-width: 82%;
+            margin-left: auto;
+
+        }
+    }
+    #productArea {
+        .boxes {
+            max-width: 82%;
+            .cards {
+                &::after {
+                        display: none;
+                    }
+                }
+            }
+        }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -205,6 +222,19 @@
             font-size: 48px;
         }
     }
+    #productArea {
+        .boxes {
+            max-width: 90%;
+            .cards {
+                &:nth-child(2n) {
+                    &::after {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
 }
 
 
@@ -278,6 +308,18 @@
             margin: auto;
         }
     }
+    #productArea {
+        .boxes {
+            max-width: 90%;
+            .cards {
+                &:nth-child(3n) {
+                    &::after {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -331,6 +373,22 @@
         .circleIMG {
             max-width: 92%;
             margin: auto;
+        }
+    }
+    #productArea {
+        .boxes {
+            .cards {
+                &:nth-child(3n) {
+                    &::after {
+                        display: block;
+                    }
+                }
+                &:nth-child(4n) {
+                    &::after {
+                        display: none;
+                    }
+                }
+            }
         }
     }
 }

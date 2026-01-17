@@ -669,7 +669,6 @@ section.error-404 {
 	}
 }
 
-
 #contactform {
 	input, textarea {
 		background-color: #ededed;
@@ -1108,6 +1107,110 @@ section.error-404 {
 	}
 }
 
+#productArea {
+	.boxes {
+		max-width: 95%;
+		margin-left: auto;
+		.cards {
+			border-bottom: 3px solid var(--secondary-color);
+			position: relative;
+			h3 {
+				font-size: 21px;
+				color: #ba5414;
+				font-family: 'Helvetica';
+				font-weight: 500;
+			}
+			&::after {
+				content: '';
+				position: absolute;
+				inset: 50% 0 auto auto;
+				transform: translateY(-50%);
+				width: 3px;
+				height: 100%;
+				background: linear-gradient(0deg,rgba(73, 32, 2, 0) 10%, rgba(73, 32, 2, 1) 45%, rgba(73, 32, 2, 1) 50%, rgba(73, 32, 2, 1) 55%, rgba(73, 32, 2, 0) 90%);
+			}
+			&:last-child {
+				&::after {
+					display: none;
+				}
+			}
+		}
+	}
+	.links {
+		li {
+			a {
+				writing-mode: vertical-rl;
+				text-orientation: mixed;
+				transform: rotate(180deg);
+				background-color: #503416;
+				border-top-right-radius: 40px;
+				border-bottom-left-radius: 40px;
+				display: grid;
+				align-items: center;
+				justify-content: center;
+				text-align: center;
+				min-height: 150px;
+				max-height: 165px;
+				width: 75px;
+				text-wrap: wrap;
+				margin-bottom: -24px;
+				padding: 24px 16px;
+				font-size: 16px;
+				line-height: 20px;
+				color: #fff;
+				&.active {
+					font-size: 21px;
+				}
+			}
+			&:nth-child(1) {
+				a {
+					background-color: #c77e01;
+				}
+			}
+			&:nth-child(2) {
+				a {
+					background-color: #0372b5;
+				}
+			}
+			&:nth-child(3) {
+				a {
+					background-color: #ad0116;
+				}
+			}
+			&:nth-child(4) {
+				a {
+					background-color: #9e580e;
+				}
+			}
+			&:nth-child(5) {
+				a {
+					background-color: #453a16;
+				}
+			}
+			&:nth-child(6) {
+				a {
+					background-color: #6d5544;
+				}
+			}
+			&:nth-child(7) {
+				a {
+					background-color: #414140;
+				}
+			}
+			&:nth-child(8) {
+				a {
+					background-color: #269db7;
+				}
+			}
+			&:nth-child(9) {
+				a {
+					background-color: #c77e01;
+				}
+			}
+		}
+	}
+}
+
 #ewarrenty {
 	padding: 100px 0;
 	h1 {
@@ -1146,6 +1249,7 @@ section.error-404 {
 		min-width: 300px;
 	}
 }
+
 .img-move {
     animation: panImage 3s ease-in-out infinite alternate;
 }
@@ -1167,7 +1271,6 @@ section.error-404 {
 		transform: translate(-50%, -45%);
 	}
 }
-
 @keyframes moveBackground {
   from {
     background-position: 0% 0;
@@ -1176,7 +1279,6 @@ section.error-404 {
     background-position: 100% 0;
   }
 }
-
 @keyframes moveRight {
 	0% {
 		transform: translateX(0);
@@ -1185,7 +1287,6 @@ section.error-404 {
 		transform: translateX(100px);
 	}
 }
-
 @keyframes moveLeft {
 	0% {
 		transform: translateX(0);
