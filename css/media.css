@@ -224,7 +224,7 @@
     }
     #productArea {
         .boxes {
-            max-width: 90%;
+            max-width: 92%;
             .cards {
                 &:nth-child(2n) {
                     &::after {
@@ -310,7 +310,7 @@
     }
     #productArea {
         .boxes {
-            max-width: 90%;
+            max-width: 95%;
             .cards {
                 &:nth-child(3n) {
                     &::after {
